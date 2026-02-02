@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-dhdchdchgdchgvc
+
+<h1>Voici ma page</h1>
+
+<h2>Salut</h2>
 </body>
 </html>
