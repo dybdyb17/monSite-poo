@@ -34,10 +34,6 @@
     <button type="submit">Soumettre</button>
 </form>
 
-<!-- Ici je veux afficher les données de mon form -->
-<p><?= isset($email) ? $email : '' ?></p>
-<p><?= isset($subject) ? $subject : '' ?></p>
-<p><?= isset($message) ? $message : '' ?></p>
 
 </body>
 </html>
