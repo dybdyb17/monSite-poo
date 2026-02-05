@@ -10,7 +10,8 @@ class App
 
         $routes = [
             '/' => [\App\Controller\HomeController::class, 'index'],
-            '/contact' => [\App\Controller\HomeController::class, 'contact'],
+            '/contact' => [\App\Controller\ContactController::class, 'contact'],
+            '/product/new' => [\App\Controller\ProductController::class, 'new'],
         ];
 
         if (isset($routes[$path])) {

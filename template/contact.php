@@ -1,39 +1,28 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-</head>
-<body>
+<div class="w-100 d-flex flex-column align-items-center justify-content-center">
+    <h1><?= $title ?></h1>
 
-<h1><?= $title ?> </h1>
+    <form action="" method="post" class="w-75">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="email" class="form-control" placeholder="example@gmail.com">
+        </div>
 
-<form action="" method="post" novalidate>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Sujet</label>
+            <select id="subject" name="subject" class="form-select">
+                <option value="" selected disabled>Choisir un sujet</option>
+                <option value="help">Aide</option>
+                <option value="bug">Bug</option>
+                <option value="refund">Remboursement</option>
+            </select>
+        </div>
 
-    <div>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="Saisir e-mail">
-    </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-control" rows="3" placeholder="Saisir votre message"></textarea>
+        </div>
 
-    <div>
-        <label for="subject">Subject</label>
+        <button type="submit">Soumettre</button>
+    </form>
 
-        <select name="subject" id="subject">
-            <option value="refund">Rembourcement</option>
-            <option value="help">Aide</option>
-            <option value="problem">Problème</option>
-        </select>
-    </div>
-
-    <div>
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-    </div>
-
-    <button type="submit">Soumettre</button>
-</form>
-
-
-</body>
-</html>
+</div>

@@ -38,3 +38,10 @@ CREATE TABLE `contact`
     message    TEXT NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE product (
+                         id INT PRIMARY KEY  AUTO_INCREMENT,
+                         title VARCHAR(255) NOT NULL,
+                         description TEXT NOT NULL,
+                         price FLOAT NOT NULL
+);
