@@ -2,12 +2,18 @@
 
 namespace App\Model;
 
+use DateTime;
+
 class User
 {
     private int $id;
     private string $email;
     private string $username;
     private string $password;
+
+    private string $created_at;
+
+    private string $updated_at;
 
     public function getId(): int
     {
@@ -52,6 +58,29 @@ class User
         $this->password = $password;
         return $this;
     }
+
+    public function getCreatedAt(): DateTime
+    {
+        return new DateTime($this->created_at);
+    }
+
+    public function setCreatedAt(string $created_at): User
+    {
+        $this->created_at = $created_at;
+        return $this;
+    }
+
+    public function getUpdatedAt(): DateTime
+    {
+        return new DateTime($this->updated_at);
+    }
+
+    public function setUpdatedAt(string $updated_at): User
+    {
+        $this->updated_at = $updated_at;
+        return $this;
+    }
+
 
 
 }
